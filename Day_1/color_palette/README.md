@@ -11,3 +11,10 @@ Create a user profile card with:
 - Use appropriate text sizes
 - Add borders and rounded corners
 - Use shadow for depth
+
+
+
+
+
+
+![color_palette](https://github.com/user-attachments/assets/bd76b762-e9ac-416f-acd4-0c631ef22849)
