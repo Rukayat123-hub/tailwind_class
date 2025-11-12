@@ -1,0 +1,63 @@
+/* Base button styles */
+.button {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+
+/* Variants */
+.button-primary {
+  background-color: #008751;
+  color: #fff;
+}
+.button-primary:hover {
+  background-color: #00663f;
+}
+
+.button-secondary {
+  background-color: #fff;
+  color: #008751;
+  border: 2px solid #008751;
+}
+.button-secondary:hover {
+  background-color: #008751;
+  color: #fff;
+}
+
+.button-danger {
+  background-color: #e23d28;
+  color: #fff;
+}
+.button-danger:hover {
+  background-color: #b32e1f;
+}
+
+.button-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.button-success:hover {
+  background-color: #1e7e34;
+}
+
+/* Sizes */
+.button-small {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.button-medium {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.button-large {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+}

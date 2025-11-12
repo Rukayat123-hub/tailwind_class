@@ -1,0 +1,74 @@
+/* NigerianCard.css */
+
+.news-card {
+  transition: all 0.3s ease;
+  border-radius: 1rem; /* same as Tailwind rounded-2xl */
+}
+
+/* Card hover effect */
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 135, 81, 0.25); /* Nigerian green glow */
+}
+
+
+.news-card img {
+  transition: transform 0.4s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Read more link underline animation */
+.news-card a {
+  position: relative;
+  text-decoration: none;
+}
+
+.news-card a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #2f4aa3; /* Naija green */
+  transition: width 0.3s ease;
+}
+
+.news-card a:hover::after {
+  width: 100%;
+}
+
+/* Category badge subtle glow animation */
+.news-card span {
+  position: relative;
+  z-index: 1;
+}
+
+.news-card span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(0, 135, 81, 0.3);
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.news-card:hover span::before {
+  opacity: 1;
+}
+
+/* Optional typography refinements */
+.news-card h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.news-card p {
+  font-family: "Inter", sans-serif;
+  color: #fff; /* Tailwind gray-700 */
+}
